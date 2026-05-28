@@ -442,10 +442,10 @@
   "62895419163261": {
     "nama": "Eet Suhaeti",
     "alasan": "-"
-  }, 
-  "6283130994222":{
-    "nama":"Second Nmr: Eet Suhaeti",
-    "alasan":"Fake middleman & nmr Dana/Gopay, BNI: 2069715234"
+  },
+  "6283130994222": {
+    "nama": "Second Nmr: Eet Suhaeti",
+    "alasan": "Fake middleman & nmr Dana/Gopay, BNI: 2069715234"
   },
   "6283194602184": {
     "nama": "Aghaprananda",
@@ -462,5 +462,9 @@
   "62895354876600": {
     "nama": "SANDI GUNAWAN",
     "alasan": "Gopay (Profile: xshadow)"
+  },
+  "6281234567890": {
+    "nama": "testing",
+    "alasan": "cuman ngetes"
   }
 }
