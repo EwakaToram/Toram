@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "apk": "https://drive.usercontent.google.com/download?id=1ZgDPYfyNAM6MEn14smTN1r8hWr8XZZP_&export=download&authuser=0"
+  "update": "https://drive.usercontent.google.com/download?id=1ZgDPYfyNAM6MEn14smTN1r8hWr8XZZP_&export=download&authuser=0",
+  "force": false,
+  "changelog": [
+    "Perbaikan pencarian",
+    "Perbaikan UI",
+    "Optimasi performa"
+  ]
 }
