@@ -736,7 +736,23 @@ onclick="showPage('penipu');toggleMenu()"
 📵 Cek Nomor Penipu
 </div>
 
-  <div
+<!-- MENU XTALL -->
+<div
+class="sidebar-item"
+onclick="window.location.href='/xtall.html';toggleMenu()"
+>
+⚔️ Xtall
+</div>
+
+<!-- MENU DOWNLOAD -->
+<div
+class="sidebar-item"
+onclick="window.location.href='/Download';toggleMenu()"
+>
+⬇️ Download
+</div>
+
+<div
 class="sidebar-item"
 onclick="showPage('tentang');toggleMenu()"
 >
@@ -940,7 +956,7 @@ Copied
   
 <script>
 // VERSI APP
-const APP_VERSION = 1.2;
+const APP_VERSION = 1;
 
 // =========================
 // HAPUS POPUP
@@ -1099,7 +1115,7 @@ try{
 
 const response =
 await fetch(
-"version.json?nocache=" +
+"https://raw.githubusercontent.com/EwakaToram/Toram/main/version.json?nocache=" +
 Date.now(),
 {
 cache:"no-store"
@@ -1408,13 +1424,13 @@ ${data.alasan}
 
   // RAW JSON GITHUB
   const GITHUB_JSON =
-  "buff.json";
+  "https://cdn.jsdelivr.net/gh/EwakaToram/Toram@main/buff.json";
   // DATABASE PENIPU
 let dataPenipu={};
 
 // LINK GITHUB PENIPU
 const GITHUB_PENIPU=
-"penipu.json";
+"https://cdn.jsdelivr.net/gh/EwakaToram/Toram@main/penipu.json";
   // =========================
   // LOAD DATA
   // =========================
