@@ -1,0 +1,1055 @@
+{
+  "version": "3.4",
+  "lastUpdated": "2026-08-01T14:12:21.091Z",
+  "items": [
+    {
+      "id": 8511,
+      "name": "Ghostfire Oni",
+      "type_label": "[Armor Crysta]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": -10, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "Accuracy", "amount": 100, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 1, "applies_to": 16384 }
+      ],
+      "note": ""
+    },
+    {
+      "id": 8452,
+      "name": "AGI+9",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "AGI", "amount": 9, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8436,
+      "name": "Mari",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 70, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": -3, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": -3, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 20, "applies_to": 128 }
+      ],
+      "boss": { "name": "Doy & Mari", "map": "Wizka Forest : Depths", "element": "Wind" },
+      "note": "Filrocas can be upgraded."
+    },
+    {
+      "id": 8435,
+      "name": "Doy",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "STR %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "DEF %", "amount": -33, "applies_to": 0 },
+        { "effect_name": "Critical Rate %", "amount": 10, "applies_to": 0 }
+      ],
+      "boss": { "name": "Doy & Mari", "map": "Wizka Forest : Depths", "element": "Wind" },
+      "note": "Don Profundo can be upgraded."
+    },
+    {
+      "id": 8429,
+      "name": "Grandanbit",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "DEX %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Accuracy %", "amount": -20, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 8, "applies_to": 0 }
+      ],
+      "boss": { "name": "Grandanbit", "map": "Wizka Forest : Inner Area", "element": "Light" },
+      "note": "Jiva can be upgraded."
+    },
+    {
+      "id": 8419,
+      "name": "Zega IX",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 1200, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 11, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 8418, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8418,
+      "name": "Zega VIII",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 1100, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6779, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8412,
+      "name": "Spying Eye",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "Accuracy", "amount": 18, "applies_to": 0 }
+      ],
+      "boss": { "name": "Tanti", "map": "Grazen Tower : Level 1" },
+      "note": "Dropped by Tanti."
+    },
+    {
+      "id": 8400,
+      "name": "Baratok",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 7000, "applies_to": 0 },
+        { "effect_name": "Weapon ATK %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Base Stability %", "amount": 7, "applies_to": 0 }
+      ],
+      "boss": { "name": "Baratok", "map": "Grazen Tower : Top Floor", "element": "Fire" }
+    },
+    {
+      "id": 8390,
+      "name": "Mortares",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "DEX %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 13, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -20, "applies_to": 0 },
+        { "effect_name": "Guard Break %", "amount": 10, "applies_to": 0 }
+      ],
+      "boss": { "name": "Mortares", "map": "Izolara Underground Passage : Hidden Passage", "element": "Earth" }
+    },
+    {
+      "id": 8372,
+      "name": "Mycodian",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "ATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": -4, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": -20, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 16, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6163, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 24, "applies_to": 16384 }
+      ],
+      "boss": { "name": "Mycodian", "map": "Ancient Exhibition Grounds", "element": "Earth" },
+      "note": "White Day 2026 event crysta. Upgrades from Evil Lefina."
+    },
+    {
+      "id": 8315,
+      "name": "Aralago",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "Physical Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7498, "applies_to": 0 }
+      ],
+      "boss": { "name": "Aralago", "map": "Grazen Forecourt", "element": "Fire" }
+    },
+    {
+      "id": 8309,
+      "name": "Zeegard",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 300, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 15, "applies_to": 0 },
+        { "effect_name": "% stronger against Water", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 20, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8294,
+      "name": "Rondine",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "DEX %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "CSPD %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6962, "applies_to": 0 }
+      ],
+      "boss": { "name": "Rondine", "map": "Nebbia Coast: Rocky Area", "element": "Wind" }
+    },
+    {
+      "id": 8284,
+      "name": "Megiston the Champion VIII",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 2400, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 32, "applies_to": 0 },
+        { "effect_name": "Fire resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Wind resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Earth resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Light resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Dark resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Neutral Resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7894, "applies_to": 0 }
+      ],
+      "boss": { "name": "Megiston", "map": "Anniversary Arena: 8th Venue", "element": "Fire" }
+    },
+    {
+      "id": 8282,
+      "name": "Sakura Dango",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": -5, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5768, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8278,
+      "name": "Neo Mage Filecia",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "AGI %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "MaxHP %", "amount": -12, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 13, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6781, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8277,
+      "name": "Zega X",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 1300, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 8419, "applies_to": 0 }
+      ],
+      "boss": { "name": "Zega", "map": "Event", "element": "Water" }
+    },
+    {
+      "id": 8275,
+      "name": "Black Peach Ninja",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 10000, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6924, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -25, "applies_to": 524288 }
+      ],
+      "boss": { "name": "Black Peach Ninja", "map": "Mt. Black Peach: Depth", "element": "Wind" }
+    },
+    {
+      "id": 8264,
+      "name": "Shark Potum",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": 900, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 3242, "applies_to": 0 }
+      ],
+      "boss": { "name": "Shark Potum", "map": "Pirates' Hideout: Area 2", "element": "Water" }
+    },
+    {
+      "id": 8257,
+      "name": "Puiet",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "STR %", "amount": 2, "applies_to": 1 },
+        { "effect_name": "MaxHP", "amount": -800, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -400, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7168, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 6, "applies_to": 1 }
+      ],
+      "boss": { "name": "Puiet", "map": "Rode Zag Range: Spirit Tree Sanctum", "element": "Earth" }
+    },
+    {
+      "id": 8254,
+      "name": "Obsia",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 7000, "applies_to": 0 },
+        { "effect_name": "DEF %", "amount": 15, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Guard Power %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7368, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8238,
+      "name": "Tulin Max",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 4129, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8235,
+      "name": "Potumotter III",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 500, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Neutral Resistance %", "amount": 30, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 8234, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8234,
+      "name": "Potumotter II",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 400, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 1, "applies_to": 0 },
+        { "effect_name": "Neutral Resistance %", "amount": 25, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 4478, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8229,
+      "name": "Stormun",
+      "type_label": "[Weapon Crysta]",
+      "stats": [
+        { "effect_name": "INT %", "amount": 5, "applies_to": 4 },
+        { "effect_name": "ATK %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "ASPD %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Wind resistance %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "MaxHP %", "amount": -9, "applies_to": 131072 },
+        { "effect_name": "Motion Speed %", "amount": 2, "applies_to": 131072 }
+      ]
+    },
+    {
+      "id": 8207,
+      "name": "Merzehal",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 25, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 13, "applies_to": 0 },
+        { "effect_name": "Magic Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 15, "applies_to": 0 },
+        { "effect_name": "CSPD %", "amount": 25, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8202,
+      "name": "Aralago",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "Physical Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7498, "applies_to": 0 }
+      ],
+      "boss": { "name": "Aralago", "map": "Grazen Forecourt", "element": "Fire" }
+    },
+    {
+      "id": 8190,
+      "name": "Velcaroy",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 300, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 35, "applies_to": 1 },
+        { "effect_name": "Long Range Damage %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Additional Melee %", "amount": 75, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6977, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8189,
+      "name": "Dark Spinebore",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 26, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 18, "applies_to": 0 },
+        { "effect_name": "Guard Recharge %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Fractional Barrier %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7465, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8186,
+      "name": "Gioco",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": -500, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 200, "applies_to": 0 },
+        { "effect_name": "Accuracy %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": -9, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7393, "applies_to": 0 }
+      ],
+      "boss": { "name": "Gioco", "map": "Fango Village", "element": "Dark" }
+    },
+    {
+      "id": 8180,
+      "name": "Phantom Melody Margrave",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "STR %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "INT %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -50, "applies_to": 1 },
+        { "effect_name": "Long Range Damage %", "amount": -6, "applies_to": 0 },
+        { "effect_name": "Tumble Unavailable", "amount": 0, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6746, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8179,
+      "name": "Top-Star Potum",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": -10, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -150, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": 900, "applies_to": 0 },
+        { "effect_name": "CSPD", "amount": 900, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 1283, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8178,
+      "name": "Glocke",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 4500, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 500, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Evasion Recharge %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6743, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8176,
+      "name": "Cake Potum",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 30, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 2307, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8175,
+      "name": "Pomie Chan III",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "AGI %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6730, "applies_to": 0 },
+        { "effect_name": "Absolute Dodge %", "amount": 10, "applies_to": 2 }
+      ]
+    },
+    {
+      "id": 8173,
+      "name": "Shadow Devil Cavalier",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Stability %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Light resistance %", "amount": -10, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Revive Time %", "amount": 10, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8174,
+      "name": "Olobaid",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "Physical Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Dark resistance %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 20, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8156,
+      "name": "Forbidden Shawle",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Unsheathe Attack %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5934, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8152,
+      "name": "Colon Boss",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "MATK %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Accuracy", "amount": -40, "applies_to": 0 },
+        { "effect_name": "Critical Rate %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 283, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8151,
+      "name": "Ultra Potum",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "Evasion Recharge %", "amount": 15, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Additional Melee %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 313, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8142,
+      "name": "Gula",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 200, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 15, "applies_to": 0 },
+        { "effect_name": "Guard Break %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5800, "applies_to": 0 }
+      ],
+      "boss": { "name": "Gula", "map": "Raden Tower: Top Floor", "element": "Water" }
+    },
+    {
+      "id": 8140,
+      "name": "Vevela",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "Ailment Resistance %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Guard Power %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Guard Recharge %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Evasion Recharge %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 632, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8137,
+      "name": "Abyssal Crystal Monster",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "Stability %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 5, "applies_to": 1 },
+        { "effect_name": "Short Range Damage %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 8136, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8136,
+      "name": "Zeagrysta",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "Stability %", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 5, "applies_to": 1 },
+        { "effect_name": "Short Range Damage %", "amount": 2, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8131,
+      "name": "Machine God Maple",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 200, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Fractional Barrier %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Physical Resistance %", "amount": 5, "applies_to": 16384 },
+        { "effect_name": "Magic Resistance %", "amount": 5, "applies_to": 16384 },
+        { "effect_name": "Fractional Barrier %", "amount": 10, "applies_to": 16384 }
+      ]
+    },
+    {
+      "id": 8107,
+      "name": "Squirinja",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 10000, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Evasion Recharge %", "amount": 25, "applies_to": 524288 },
+        { "effect_name": "Short Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6924, "applies_to": 0 }
+      ],
+      "boss": { "name": "Squirinja", "map": "Mt. White Peach: Depth", "element": "Earth" }
+    },
+    {
+      "id": 8106,
+      "name": "Supreme Evil Crystal Beast",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 400, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6054, "applies_to": 0 }
+      ],
+      "boss": { "name": "Supreme Evil Crystal Beast", "map": "Lixaro Ghost Town: Mansion", "element": "Dark" }
+    },
+    {
+      "id": 8103,
+      "name": "Supreme Evil Crystal Beast",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "Physical Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "MP", "amount": 400, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6054, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8102,
+      "name": "Springtime Sakura",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 13, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 4398, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -15, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8098,
+      "name": "Skelerow",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "Water resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Dark resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 15, "applies_to": 0 },
+        { "effect_name": "Barrier Cooldown %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 4528, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8085,
+      "name": "Bakuzan",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "DEX %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "ASPD %", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6648, "applies_to": 0 }
+      ],
+      "boss": { "name": "Bakuzan", "map": "Afdal Uplands: Summit", "element": "Neutral" }
+    },
+    {
+      "id": 8060,
+      "name": "Black Lixi",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "ASPD", "amount": 300, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 40, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Fractional Barrier %", "amount": 10, "applies_to": 16384 },
+        { "effect_name": "Barrier Cooldown %", "amount": 10, "applies_to": 32768 }
+      ]
+    },
+    {
+      "id": 8057,
+      "name": "Royal Ox King II",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": -30, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 200, "applies_to": 0 },
+        { "effect_name": "Accuracy", "amount": 50, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5332, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8056,
+      "name": "Pillorocas",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "Physical Resistance %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": -5, "applies_to": 0 },
+        { "effect_name": "Critical Rate %", "amount": 50, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8047,
+      "name": "Wild Beast Lixi",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 15, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "ASPD %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5517, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8043,
+      "name": "Goblin Zucotto",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 24, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 1, "applies_to": 1 },
+        { "effect_name": "Upgrade for", "amount": 5269, "applies_to": 0 }
+      ],
+      "boss": { "name": "Goblin Zucotto", "map": "Anglaise Forest", "element": "Dark" }
+    },
+    {
+      "id": 8042,
+      "name": "Piscruva",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "ATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": -300, "applies_to": 0 },
+        { "effect_name": "CSPD", "amount": -300, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6357, "applies_to": 0 }
+      ],
+      "boss": { "name": "Piscruva", "map": "Vicus Mutans: Square", "element": "Water" }
+    },
+    {
+      "id": 8041,
+      "name": "Erkuch",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 24, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Magic Pierce %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 1, "applies_to": 8 },
+        { "effect_name": "Upgrade for", "amount": 5218, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 8023,
+      "name": "Meduso",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "Guard Power %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Guard Recharge %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 20, "applies_to": 32768 },
+        { "effect_name": "Motion Speed %", "amount": 1, "applies_to": 16384 },
+        { "effect_name": "Upgrade for", "amount": 2357, "applies_to": 0 }
+      ],
+      "boss": { "name": "Meduso", "map": "Aquastida Inner Ward", "element": "Water" }
+    },
+    {
+      "id": 8021,
+      "name": "Biskyva",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 900, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Critical Damage %", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Fractional Barrier %", "amount": 19, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6305, "applies_to": 0 }
+      ],
+      "boss": { "name": "Biskyva", "map": "Aquastida Central", "element": "Water" }
+    },
+    {
+      "id": 8003,
+      "name": "DEX+8",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "DEX", "amount": 8, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7976,
+      "name": "Dandolion",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 500, "applies_to": 0 },
+        { "effect_name": "Stability %", "amount": 6, "applies_to": 32768 },
+        { "effect_name": "CSPD", "amount": 300, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 2603, "applies_to": 0 }
+      ],
+      "boss": { "name": "Dandolion", "map": "Umidus Valley: Cliff Path", "element": "Water" }
+    },
+    {
+      "id": 7907,
+      "name": "Remnant of Beyond",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "Physical Pierce %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": -250, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 10, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7904,
+      "name": "Castilia",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "Magic Pierce %", "amount": 10, "applies_to": 524288 },
+        { "effect_name": "Accuracy %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": -900, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 5, "applies_to": 4 }
+      ],
+      "boss": { "name": "Castilia", "map": "High Difficulty Boss Battle Event Venue", "element": "Neutral" }
+    },
+    {
+      "id": 7903,
+      "name": "Bemoz",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -150, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Magic Pierce %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 17, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6595, "applies_to": 0 }
+      ],
+      "boss": { "name": "Bemoz", "map": "Deusania's Lab Innermost Chambers", "element": "Earth" }
+    },
+    {
+      "id": 7902,
+      "name": "Queen Rosemee",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "Magic Pierce %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Critical Rate %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5487, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7897,
+      "name": "Menti",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 300, "applies_to": 0 },
+        { "effect_name": "MATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "ASPD", "amount": 250, "applies_to": 1 },
+        { "effect_name": "Guard Break %", "amount": 14, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6202, "applies_to": 0 }
+      ],
+      "boss": { "name": "Menti", "map": "Eumano Village Ruins: Central", "element": "Earth" }
+    },
+    {
+      "id": 7895,
+      "name": "Fubbit",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Physical Pierce %", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Ailment Resistance %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5768, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7894,
+      "name": "Megiston The Champion VII",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 2200, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 29, "applies_to": 0 },
+        { "effect_name": "Fire resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Water resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Wind resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Earth resistance %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Light resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Dark resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Neutral Resistance %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7339, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7893,
+      "name": "Hero Potum IV",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxHP %", "amount": 13, "applies_to": 0 },
+        { "effect_name": "Accuracy %", "amount": 19, "applies_to": 0 },
+        { "effect_name": "Aggro %", "amount": 22, "applies_to": 0 },
+        { "effect_name": "Fractional Barrier %", "amount": 16, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7752,
+      "name": "HP+800",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 800, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7736,
+      "name": "Deformis",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": -200, "applies_to": 0 },
+        { "effect_name": "ATK %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Anticipate %", "amount": 14, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6139, "applies_to": 0 }
+      ],
+      "boss": { "name": "Deformis", "map": "Eumano Village Ruins: Central", "element": "Earth" }
+    },
+    {
+      "id": 7729,
+      "name": "Wiltileaf",
+      "type_label": "[Enhancer Crysta (Blue)]",
+      "stats": [
+        { "effect_name": "ATK %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": -15, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Motion Speed %", "amount": 0, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 4981, "applies_to": 0 }
+      ],
+      "boss": { "name": "Wiltileaf", "map": "Eumano Village Ruins: Area 2", "element": "Fire" }
+    },
+    {
+      "id": 7676,
+      "name": "Mulgoon's Hand",
+      "type_label": "[Armor Crysta]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 10000, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": -100, "applies_to": 0 },
+        { "effect_name": "Accuracy %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 4, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7670,
+      "name": "Meteora",
+      "type_label": "[Enhancer Crysta (Green)]",
+      "stats": [
+        { "effect_name": "Physical Pierce %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Critical Damage", "amount": 7, "applies_to": 0 },
+        { "effect_name": "Unsheathe Attack %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 5524, "applies_to": 0 }
+      ],
+      "boss": { "name": "Meteora", "map": "Menabra Plains", "element": "Fire" }
+    },
+    {
+      "id": 7660,
+      "name": "VIT+8",
+      "type_label": "[Normal Crysta]",
+      "stats": []
+    },
+    {
+      "id": 7642,
+      "name": "Jibril III",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "Natural MP Regen", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Natural MP Regen %", "amount": 12, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 100, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 16, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 9, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 11, "applies_to": 0 },
+        { "effect_name": "Anticipate %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7641, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7640,
+      "name": "Jibril",
+      "type_label": "[Additional Crysta]",
+      "stats": [
+        { "effect_name": "Natural MP Regen", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Natural MP Regen %", "amount": 4, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 100, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 3, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 5, "applies_to": 0 },
+        { "effect_name": "Anticipate %", "amount": 1, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7639,
+      "name": "Breeta",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "stats": [
+        { "effect_name": "MaxHP", "amount": 5000, "applies_to": 0 },
+        { "effect_name": "Stability %", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Attack MP Recovery", "amount": 15, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 6253, "applies_to": 0 }
+      ],
+      "boss": { "name": "Breeta", "map": "Day Sakura Garden", "element": "Dark" }
+    },
+    {
+      "id": 7641,
+      "name": "Jibril II",
+      "type_label": "[Enhancer Crysta (Yellow)]",
+      "stats": [
+        { "effect_name": "Natural MP Regen", "amount": 4, "applies_to": 0 },
+        { "effect_name": "Natural MP Regen %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "MaxMP", "amount": 100, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 12, "applies_to": 0 },
+        { "effect_name": "Short Range Damage %", "amount": 6, "applies_to": 0 },
+        { "effect_name": "Long Range Damage %", "amount": 8, "applies_to": 0 },
+        { "effect_name": "Anticipate %", "amount": 2, "applies_to": 0 },
+        { "effect_name": "Upgrade for", "amount": 7640, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7613,
+      "name": "Scream Shadow",
+      "type_label": "[Special Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 300, "applies_to": 0 },
+        { "effect_name": "DEF %", "amount": -40, "applies_to": 0 },
+        { "effect_name": "CSPD", "amount": 1000, "applies_to": 0 },
+        { "effect_name": "Critical Rate %", "amount": 20, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7608,
+      "name": "Seele Zauga II",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "stats": [
+        { "effect_name": "Physical Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Magic Resistance %", "amount": 10, "applies_to": 0 },
+        { "effect_name": "Critical Rate", "amount": 20, "applies_to": 0 },
+        { "effect_name": "Item Cooldown", "amount": -1, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7600,
+      "name": "CSPD+160",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "CSPD", "amount": 160, "applies_to": 0 }
+      ]
+    },
+    {
+      "id": 7581,
+      "name": "MP+400",
+      "type_label": "[Normal Crysta]",
+      "stats": [
+        { "effect_name": "MaxMP", "amount": 400, "applies_to": 0 }
+      ]
+    }
+  ]
+}
