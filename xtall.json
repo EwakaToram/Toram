@@ -3,6 +3,193 @@
   "lastUpdated": "2026-08-01T18:50:16Z",
   "items": [
     {
+  "id": 8514,
+  "name": "Crashing Lightning",
+  "type_label": "[Enhancer Crysta (Green)]",
+  "note": "",
+  "stats": [
+    {
+      "effect_name": "ATK %",
+      "amount": 7,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MATK %",
+      "amount": 7,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Short Range Damage %",
+      "amount": 7,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate %",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MaxHP",
+      "amount": 7000,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Motion Speed %",
+      "amount": 2,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 1
+    },
+    {
+      "effect_name": "Upgrade for",
+      "amount": 8513,
+      "applies_to": 0
+    }
+  ],
+  "boss": {
+    "name": "Arnold",
+    "map": "Sofya: Boss Event Collab",
+    "map_name": "Sofya: Boss Event Collab",
+    "element": "Wind"
+  }
+    },
+    {
+  "id": 8513,
+  "name": "Arnold II",
+  "type_label": "[Enhancer Crysta (Green)]",
+  "note": "",
+  "stats": [
+    {
+      "effect_name": "ATK %",
+      "amount": 6,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MATK %",
+      "amount": 6,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Short Range Damage %",
+      "amount": 6,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate %",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MaxHP",
+      "amount": 6000,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Motion Speed %",
+      "amount": 2,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 1
+    },
+    {
+      "effect_name": "Upgrade for",
+      "amount": 8512,
+      "applies_to": 0
+    }
+  ],
+  "boss": {
+    "name": "Arnold",
+    "map": "Sofya: Boss Event Collab",
+    "map_name": "Sofya: Boss Event Collab",
+    "element": "Wind"
+  }
+    },
+    {
+  "id": 8512,
+  "name": "Arnold",
+  "type_label": "[Armor Crysta]",
+  "note": "",
+  "stats": [
+    {
+      "effect_name": "ATK %",
+      "amount": 5,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MATK %",
+      "amount": 5,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Short Range Damage %",
+      "amount": 5,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Critical Rate %",
+      "amount": 15,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "MaxHP",
+      "amount": 5000,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Motion Speed %",
+      "amount": 2,
+      "applies_to": 0
+    },
+    {
+      "effect_name": "Anticipate %",
+      "amount": 10,
+      "applies_to": 1
+    }
+  ],
+  "boss": {
+    "name": "Arnold",
+    "map": "Sofya: Boss Event Collab",
+    "map_name": "Sofya: Boss Event Collab",
+    "element": "Wind"
+  }
+    },
+    {
       "id": 8511,
       "name": "Ghostfire Oni",
       "type_label": "[Armor Crysta]",
