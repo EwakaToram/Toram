@@ -51,7 +51,7 @@
     {
       "effect_name": "Anticipate %",
       "amount": 10,
-      "applies_to": 1
+      "applies_to": 5
     },
     {
       "effect_name": "Upgrade for",
@@ -115,7 +115,7 @@
     {
       "effect_name": "Anticipate %",
       "amount": 10,
-      "applies_to": 1
+      "applies_to": 5
     },
     {
       "effect_name": "Upgrade for",
@@ -179,7 +179,7 @@
     {
       "effect_name": "Anticipate %",
       "amount": 10,
-      "applies_to": 1
+      "applies_to": 5
     }
   ],
   "boss": {
