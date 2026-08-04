@@ -1,6 +1,6 @@
 {
   "version": "3.4",
-  "lastUpdated": "2026-08-04T15:15:28.790Z",
+  "lastUpdated": "2026-08-04T18:39:14.861Z",
   "items": [
     {
       "id": 8514,
@@ -13306,8 +13306,8 @@
       "type_label": "[Weapon Crysta]",
       "stats": [
         {
-          "effect_name": "MaxMP",
-          "amount": -2000,
+          "effect_name": "Short Range Damage %",
+          "amount": 10,
           "applies_to": 0
         },
         {
@@ -13316,16 +13316,18 @@
           "applies_to": 0
         },
         {
-          "effect_name": "Short Range Damage %",
-          "amount": 10,
+          "effect_name": "MaxMP",
+          "amount": -2000,
           "applies_to": 0
         }
       ],
       "boss": {
         "name": "Death Colon",
         "map": "Vyshed the Tainted Land: Area 2",
+        "map_name": "Vyshed the Tainted Land: Area 2",
         "element": "Dark"
-      }
+      },
+      "note": ""
     },
     {
       "id": 1164,
@@ -14812,6 +14814,137 @@
         }
       ],
       "boss": null
+    },
+    {
+      "id": 8516,
+      "name": "Weepy colon",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "Short Range Damage %",
+          "amount": 12,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "CSPD",
+          "amount": 1000,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "MaxMP",
+          "amount": -2000,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Upgrade for",
+          "amount": 1183,
+          "applies_to": 0
+        }
+      ],
+      "boss": null
+    },
+    {
+      "id": 8517,
+      "name": "Usan The Ghost Master",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "MATK %",
+          "amount": 12,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Additional Magic %",
+          "amount": 125,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "ASPD",
+          "amount": 200,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Magic Barrier",
+          "amount": 200,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Upgrade for",
+          "amount": 1904,
+          "applies_to": 0
+        }
+      ],
+      "boss": null
+    },
+    {
+      "id": 8518,
+      "name": "Leomino",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "Attack MP Recovery",
+          "amount": 8,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "VIT %",
+          "amount": 7,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Ailment Resistance %",
+          "amount": 5,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Aggro %",
+          "amount": 15,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Upgrade for",
+          "amount": 6343,
+          "applies_to": 0
+        }
+      ],
+      "boss": null
+    },
+    {
+      "id": 8519,
+      "name": "Kipina",
+      "type_label": "[Enhancer Crysta (Red)]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "MATK %",
+          "amount": 12,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Magic Pierce %",
+          "amount": 8,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Aggro %",
+          "amount": -13,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "MDEF %",
+          "amount": -36,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Upgrade for",
+          "amount": 7493,
+          "applies_to": 0
+        }
+      ],
+      "boss": null
     }
   ],
   "upgradeMap": {
@@ -15456,6 +15589,18 @@
     ],
     "8515": [
       6049
+    ],
+    "8516": [
+      1183
+    ],
+    "8517": [
+      1904
+    ],
+    "8518": [
+      6343
+    ],
+    "8519": [
+      7493
     ]
   },
   "downgradeMap": {
@@ -15492,6 +15637,7 @@
     "1078": 2785,
     "1119": 2945,
     "1164": 2761,
+    "1183": 8516,
     "1212": 2603,
     "1283": 8179,
     "1312": 2841,
@@ -15507,7 +15653,7 @@
     "1840": 6049,
     "1849": 2686,
     "1901": 3520,
-    "1904": 3605,
+    "1904": 8517,
     "1925": 3702,
     "1975": 3576,
     "1987": 6692,
@@ -15635,6 +15781,7 @@
     "6202": 7897,
     "6253": 7639,
     "6305": 8021,
+    "6343": 8518,
     "6357": 8042,
     "6498": 7339,
     "6595": 7903,
@@ -15652,6 +15799,7 @@
     "7368": 8254,
     "7393": 8186,
     "7465": 8189,
+    "7493": 8519,
     "7498": 8202,
     "7640": 7641,
     "7641": 7642,
