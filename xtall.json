@@ -1,6 +1,6 @@
 {
   "version": "3.4",
-  "lastUpdated": "2026-08-04T18:39:14.861Z",
+  "lastUpdated": "2026-08-06T08:29:01.795Z",
   "items": [
     {
       "id": 8514,
@@ -1113,38 +1113,6 @@
       ]
     },
     {
-      "id": 8202,
-      "name": "Aralago",
-      "type_label": "[Normal Crysta]",
-      "stats": [
-        {
-          "effect_name": "Physical Resistance %",
-          "amount": 7,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Magic Resistance %",
-          "amount": 7,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Ailment Resistance %",
-          "amount": 7,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Upgrade for",
-          "amount": 7498,
-          "applies_to": 0
-        }
-      ],
-      "boss": {
-        "name": "Aralago",
-        "map": "Grazen Forecourt",
-        "element": "Fire"
-      }
-    },
-    {
       "id": 8190,
       "name": "Velcaroy",
       "type_label": "[Enhancer Crysta (Purple)]",
@@ -1206,7 +1174,14 @@
           "amount": 7465,
           "applies_to": 0
         }
-      ]
+      ],
+      "note": "",
+      "boss": {
+        "name": "Dark Spinebore",
+        "map": "Izola Underground Passage: Area 3",
+        "map_name": "Izola Underground Passage: Area 3",
+        "element": "Dark"
+      }
     },
     {
       "id": 8186,
@@ -3469,7 +3444,14 @@
           "amount": 10,
           "applies_to": 0
         }
-      ]
+      ],
+      "note": "",
+      "boss": {
+        "name": "Ponier",
+        "map": "Avanclain Shrine (Otoshidama)",
+        "map_name": "Avanclain Shrine (Otoshidama)",
+        "element": "Earth"
+      }
     },
     {
       "id": 7422,
@@ -14945,6 +14927,59 @@
         }
       ],
       "boss": null
+    },
+    {
+      "id": 8520,
+      "name": "Mermaid Potum",
+      "type_label": "[Enhancer Crysta (Purple)]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "MaxHP",
+          "amount": 1500,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "MaxMP",
+          "amount": 300,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Attack MP Recovery",
+          "amount": 15,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Upgrade for",
+          "amount": 5688,
+          "applies_to": 0
+        }
+      ],
+      "boss": null
+    },
+    {
+      "id": 8521,
+      "name": "Aba",
+      "type_label": "[Additional Crysta]",
+      "note": "",
+      "stats": [
+        {
+          "effect_name": "Short Range Damage %",
+          "amount": 12,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Guard Break %",
+          "amount": 15,
+          "applies_to": 0
+        },
+        {
+          "effect_name": "Aggro %",
+          "amount": 15,
+          "applies_to": 1
+        }
+      ],
+      "boss": null
     }
   ],
   "upgradeMap": {
@@ -15530,9 +15565,6 @@
     "8190": [
       6977
     ],
-    "8202": [
-      7498
-    ],
     "8234": [
       4478
     ],
@@ -15601,6 +15633,9 @@
     ],
     "8519": [
       7493
+    ],
+    "8520": [
+      5688
     ]
   },
   "downgradeMap": {
@@ -15764,6 +15799,7 @@
     "5487": 7902,
     "5517": 8047,
     "5524": 7670,
+    "5688": 8520,
     "5698": 6498,
     "5718": 7496,
     "5757": 7017,
@@ -15800,7 +15836,7 @@
     "7393": 8186,
     "7465": 8189,
     "7493": 8519,
-    "7498": 8202,
+    "7498": 8315,
     "7640": 7641,
     "7641": 7642,
     "7894": 8284,
