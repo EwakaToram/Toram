@@ -1,6 +1,6 @@
 {
   "version": "supabase",
-  "lastUpdated": "2026-08-20T11:21:27.339Z",
+  "lastUpdated": "2026-08-20T11:26:30.933Z",
   "items": [
     {
       "id": 2646,
@@ -17096,70 +17096,6 @@
           "applies_to": 0
         }
       ]
-    },
-    {
-      "id": 8523,
-      "name": "Megiston the Champion IX",
-      "type_label": "[Enhancer Crysta (Red)]",
-      "note": "",
-      "stats": [
-        {
-          "effect_name": "MaxHP",
-          "amount": 2600,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Critical Rate",
-          "amount": 35,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Fire resistance %",
-          "amount": 9,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Water resistance %",
-          "amount": 9,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Wind resistance %",
-          "amount": 6,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Earth resistance %",
-          "amount": 6,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Light resistance %",
-          "amount": 6,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Dark resistance %",
-          "amount": 6,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Neutral Resistance %",
-          "amount": 6,
-          "applies_to": 0
-        },
-        {
-          "effect_name": "Upgrade for",
-          "amount": 8284,
-          "applies_to": 0
-        }
-      ],
-      "boss": {
-        "name": "Megiston (9th Anniv )",
-        "map": "Anniversary Arena: 9th Venue",
-        "map_name": "Anniversary Arena: 9th Venue",
-        "element": "Fire"
-      }
     }
   ],
   "upgradeMap": {
@@ -17819,9 +17755,6 @@
     ],
     "8522": [
       8284
-    ],
-    "8523": [
-      8284
     ]
   },
   "downgradeMap": {
@@ -18028,7 +17961,7 @@
     "7894": 8284,
     "8136": 8137,
     "8234": 8235,
-    "8284": 8523,
+    "8284": 8522,
     "8418": 8419,
     "8419": 8277,
     "8512": 8513,
