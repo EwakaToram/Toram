@@ -1039,7 +1039,7 @@ body.dark-mode #editPenipuModal .json-modal-footer .btn-action.btn-close {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999999; /* di atas toast */
+    z-index: 9999999; 
     animation: fadeIn 0.3s ease forwards;
 }
 @keyframes fadeIn {
@@ -1213,7 +1213,7 @@ body.dark-mode .scan-status.penipu {
 body.dark-mode .scan-status.aman {
     background: #15803d;
 }
-/* Sub-page di dalam halaman penipu */
+
 .penipu-subpage {
     display: none;
 }
@@ -1281,8 +1281,10 @@ body.hide-sidebar h2 {
 }
 .btn-back-pos:hover {
     background: rgba(255,255,255,0.8);
-    box-shadow: 7px 8px 15px rgba(194,199,207,0.75), -7px -8px 15px rgba(255,255,255,1);
-}
+    box-shadow:
+      7px 8px 15px rgba(194, 199, 207, .75),
+      -7px -8px 15px rgba(255, 255, 255, 1);
+  }
 body.hide-sidebar .btn-back-pos {
     display: flex !important;
 }
@@ -1833,7 +1835,6 @@ body.dark-mode .edit-toolbar .btn-refresh:hover {
     background: rgba(59,130,246,0.15);
 }
 
-/* Update modal */
 body.dark-mode .update-box {
     background: var(--bg-card);
     color: var(--text-primary);
@@ -2061,10 +2062,10 @@ body.dark-mode .btn-logout {
 body.dark-mode .btn-logout:hover {
     background: rgba(239,68,68,0.25);
 }
-body.dark-mode .menu-icon {
+body.dark-mode .menu-icon,body.dark-mode .btn-back-pos {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
 }
-body.dark-mode .menu-icon:hover {
+body.dark-mode .menu-icon:hover,body.dark-mode .btn-back-pos:hover {
     box-shadow: 0 6px 24px rgba(59, 130, 246, 0.3), 0 0 0 1px rgba(59, 130, 246, 0.2) !important;
     background: rgba(255, 255, 255, 0.12) !important;
 }
@@ -2243,6 +2244,22 @@ body.dark-mode .map-btn {
 body.dark-mode .map-btn:hover {
     background: #1d4ed8;
 }
+
+#kodeposList { max-height:300px; overflow-y:auto; border:1px solid #e2e8f0; border-radius:8px; padding:8px; }
+#kodeposList .item { display:flex; justify-content:space-between; align-items:center; padding:6px 8px; border-bottom:1px solid #f1f5f9; font-size:13px; }
+#kodeposList .item:last-child { border-bottom:none; }
+#kodeposList .item .actions { display:flex; gap:4px; }
+#kodeposList .item .actions button { padding:2px 8px; border:none; border-radius:4px; cursor:pointer; font-size:11px; font-weight:600; }
+.btn-edit-kodepos { background:#3b82f6; color:#fff; }
+.btn-edit-kodepos:hover { background:#2563eb; }
+.btn-delete-kodepos { background:#ef4444; color:#fff; }
+.btn-delete-kodepos:hover { background:#dc2626; }
+.btn-save-kodepos { background:#22c55e; color:#fff; }
+.btn-save-kodepos:hover { background:#16a34a; }
+.btn-cancel-kodepos { background:#6b7280; color:#fff; }
+.btn-cancel-kodepos:hover { background:#4b5563; }
+body.dark-mode #kodeposList { border-color:var(--border-light, #475569); }
+body.dark-mode #kodeposList .item { border-bottom-color:rgba(255,255,255,0.06); }
 </style>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#3b82f6">
@@ -2380,7 +2397,7 @@ body.dark-mode .map-btn:hover {
     </div>
 </div>
         
-        <div class="page" id="edit_penipu">
+        <div class="page" style="padding-bottom:465px;" id="edit_penipu">
             <div class="xtall-topbar">
                 <div class="xtall-stats" id="editPenipuStats">
                     <span class="stat-item">📵 <span class="num skem" id="editPenipuTotal">0</span> Data Penipu</span>
@@ -2397,7 +2414,7 @@ body.dark-mode .map-btn:hover {
                         <input type="text" id="inputNomorPenipuEdit" placeholder="Contoh: 08123456789" />
                         <label style="display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12px;font-weight:600;cursor:pointer;">
                             <input type="checkbox" id="inputNomorPenipuIsCredit" style="width:16px;height:16px;accent-color:#3b82f6;">
-                            Ini nomor kartu kredit (0 di awal tidak diubah menjadi 62)
+                            <span style="font-size:12px;">Centang jika kartu kredit</span>
                         </label>
                     </div>
                     <div class="form-group">
@@ -2416,6 +2433,7 @@ body.dark-mode .map-btn:hover {
                         <select id="inputAlasanPenipuSelectEdit">
                             <option value="">-- Pilih Alasan --</option>
                             <option value="Scam Spina">Scam Spina</option>
+                            <option value="Jual Beli Item">Jual Beli Akun</option>
                             <option value="Jual Beli Item">Jual Beli Item</option>
                             <option value="Fake MM">Fake MM</option>
                             <option value="Bawa Kabur EQ">Bawa Kabur EQ</option>
@@ -2431,7 +2449,7 @@ body.dark-mode .map-btn:hover {
                             <option value="BRI">BRI</option>
                             <option value="BNI">BNI</option>
                             <option value="Mandiri">Mandiri</option>
-                            <option value="Lainnya">Lainnya (tulis di bawah)</option>
+                            
                         </select>
                     </div>
                 </div>
@@ -2445,9 +2463,9 @@ body.dark-mode .map-btn:hover {
                     <button class="btn-upload" onclick="uploadPenipu()"><i class="fas fa-upload"></i> Upload</button>
                 </div>
 <hr style="margin:20px 0; border-color:rgba(203,213,225,0.4);">
-<div id="nmidFormContainer" style="background:rgba(59,130,246,0.08); border-radius:16px; padding:16px; border:1px solid rgba(59,130,246,0.2);">
+<div id="nmidFormContainer" style="background:rgba(59,130,246,0.08); border-radius:16px; padding:10px; border:1px solid rgba(59,130,246,0.2);">
     <div style="font-size:16px; font-weight:700; color:#2563eb; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-        <span>🔑</span> Tambah NMID ke Database Penipuan
+        <span>🔑</span> Tambah NMID Penipuan
     </div>
     <div class="form-row">
         <div class="form-group">
@@ -2456,9 +2474,9 @@ body.dark-mode .map-btn:hover {
             <small style="color:#94a3b8; display:block; margin-top:2px;">NMID harus diawali dengan "ID"</small>
         </div>
         <div class="form-group">
-            <label>Relasi (_oq)</label>
+            <label>Relasi</label>
             <input type="number" id="inputRelasiNmid" placeholder="Masukkan angka relasi" />
-            <small style="color:#94a3b8; display:block; margin-top:2px;">Isi dengan angka yang sama dengan _o di tabel scammers</small>
+            <small style="color:#94a3b8;font-size:10px; display:block; margin-top:2px;">Jika Ada data Nomor, Isi dengan angka yang sama dengan Relasi Nomor</small>
         </div>
     </div>
     <div class="form-actions" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
@@ -2471,6 +2489,68 @@ body.dark-mode .map-btn:hover {
     </div>
     <div id="nmidResult" style="margin-top:12px;"></div>
 </div>
+<!-- ===== KELOLA DATA KODEPOS ===== -->
+<hr style="margin:20px 0; border-color:rgba(203,213,225,0.4);">
+<div style="background:rgba(34,197,94,0.08); border-radius:16px; padding:10px; border:1px solid rgba(34,197,94,0.2);">
+    <div style="font-size:16px; font-weight:700; color:#22c55e; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+        <span>📍</span> Kelola Data Kodepos
+    </div>
+
+    <!-- Form tambah / edit -->
+    <div id="kodeposForm" style="margin-bottom:12px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Kode Pos</label>
+                <input type="text" id="inputKodepos" placeholder="Contoh: 16640" maxlength="5" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Kelurahan</label>
+                <input type="text" id="inputKelurahan" placeholder="Kelurahan/Desa" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Kecamatan</label>
+                <input type="text" id="inputKecamatan" placeholder="Kecamatan" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Kabupaten/Kota</label>
+                <input type="text" id="inputKabupaten" placeholder="Kabupaten/Kota" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Provinsi</label>
+                <input type="text" id="inputProvinsi" placeholder="Provinsi" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div>
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Latitude</label>
+                <input type="text" id="inputLatitude" placeholder="Contoh: -7.1857161" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+            <div style="grid-column:span 2;">
+                <label style="font-size:12px; font-weight:600; color:#64748b;">Longitude</label>
+                <input type="text" id="inputLongitude" placeholder="Contoh: 109.4368274" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; box-sizing:border-box;">
+            </div>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:10px;">
+            <button id="btnTambahKodepos" onclick="tambahKodepos()" style="flex:1; padding:10px; border:none; border-radius:12px; background:linear-gradient(135deg,#22c55e,#16a34a); color:#fff; font-weight:700; cursor:pointer;">➕ Tambah</button>
+            <button id="btnBatalKodepos" onclick="batalEditKodepos()" style="display:none; padding:10px; border:none; border-radius:12px; background:#e2e8f0; color:#64748b; font-weight:700; cursor:pointer;">✕ Batal</button>
+        </div>
+        <input type="hidden" id="editKodeposId" value="">
+    </div>
+
+    <!-- Pencarian -->
+    <div class="xtall-search-wrap" style="margin-bottom:12px;">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchKodepos" placeholder="Cari kode pos atau kelurahan..." oninput="cariKodepos()" style="flex:1; background:transparent; border:none; padding:12px 8px; font-size:12px; color:#1e293b; outline:none;">
+        <button onclick="document.getElementById('searchKodepos').value=''; cariKodepos();" style="background:none; border:none; color:#94a3b8; padding:6px 12px; cursor:pointer; font-size:16px;">✕</button>
+    </div>
+
+    <!-- Daftar hasil -->
+    <div id="kodeposList" style="max-height:300px; overflow-y:auto; border:1px solid #e2e8f0; border-radius:8px; padding:8px; margin-top:10px;">
+        <div style="text-align:center;color:#94a3b8;padding:20px;">Ketik kode pos atau nama kelurahan untuk mencari.</div>
+    </div>
+</div>
+
+
+
+
             </div>
 
             <hr style="margin:16px 0; border-color:rgba(203,213,225,0.4);">
@@ -2498,8 +2578,8 @@ body.dark-mode .map-btn:hover {
         </div>
         <div class="form-group">
             <label>Relasi (tidak bisa diubah)</label>
-            <input type="number" id="editIdPenipuInline" readonly style="background:rgba(226,232,240,0.5); cursor:not-allowed;">
-            <small style="font-size:11px; color:#94a3b8;">ID grup tidak dapat diubah</small>
+           <input type="number" id="editIdPenipuInline" placeholder="Masukkan relasi baru" style="width:100%; padding:8px 12px; border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; font-size:14px; color:#1e293b; box-sizing:border-box;">
+<small style="font-size:11px; color:#94a3b8; display:block; margin-top:2px;">Isi dengan angka grup relasi. Kosongkan untuk otomatis.</small>
         </div>
     </div>
     <div class="form-row">
@@ -2836,60 +2916,7 @@ body.dark-mode .map-btn:hover {
                 </div>
             </div>
         </div>
-<div class="json-modal-overlay edit-penipu-modal" id="editPenipuModal">
-    <div class="json-modal">
-        <div class="json-modal-header">
-            <span class="json-modal-title">✏️ Edit Data Penipu</span>
-            <button class="json-modal-close" onclick="closeEditPenipu()">✕</button>
-        </div>
-        <div class="json-modal-body">
-            <div class="form-group">
-                <label>Nomor (bisa diubah)</label>
-                <input type="text" id="editNomorPenipu" placeholder="Masukkan nomor baru">
-            </div>
-            <div class="form-group">
-                <label>Relasi (tidak bisa diubah untuk menjaga relasi)</label>
-                <input type="number" id="editIdPenipu" readonly>
-                <small>ID grup tidak dapat diubah setelah data dibuat</small>
-            </div>
-            <div class="form-group">
-                <label>Nama</label>
-                <input type="text" id="editNamaPenipu" placeholder="Masukkan nama">
-            </div>
-            <div class="form-group">
-                <label>Alasan</label>
-                <select id="editAlasanPenipuSelect">
-                    <option value="">-- Pilih Alasan --</option>
-                    <option value="Scam Spina">Scam Spina</option>
-                    <option value="Jual Beli Item">Jual Beli Item</option>
-                    <option value="Fake MM">Fake MM</option>
-                    <option value="Bawa Kabur EQ">Bawa Kabur EQ</option>
-                    <option value="HB Account">HB Account</option>
-                    <option value="Menyamar (Fake ID)">Menyamar (Fake ID)</option>
-                    <option value="Gopay">Gopay</option>
-                    <option value="Dana">Dana</option>
-                    <option value="OVO">OVO</option>
-                    <option value="Spay">Spay</option>
-                    <option value="SeaBank">SeaBank</option>
-                    <option value="BankJago">BankJago</option>
-                    <option value="BCA">BCA</option>
-                    <option value="BRI">BRI</option>
-                    <option value="BNI">BNI</option>
-                    <option value="Mandiri">Mandiri</option>
-                    <option value="Lainnya">Lainnya (tulis di bawah)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Alasan Tambahan (opsional)</label>
-                <input type="text" id="editAlasanPenipuText" placeholder="Tambahkan alasan lain jika diperlukan...">
-            </div>
-        </div>
-        <div class="json-modal-footer">
-            <button class="btn-action btn-close" onclick="closeEditPenipu()">Batal</button>
-            <button class="btn-action btn-save" onclick="saveEditPenipu()">Simpan</button>
-        </div>
-    </div>
-</div>
+
 <dialog id="deleteConfirmDialog" style="border: none; border-radius: 16px; padding: 20px; max-width: 350px; width: 90%; background: var(--bg-card, #fff); box-shadow: 0 20px 60px rgba(0,0,0,0.3); backdrop-filter: blur(8px);">
     <div style="text-align:center;">
         <div style="font-size: 24px; margin-bottom: 8px;">🗑️</div>
@@ -3002,9 +3029,6 @@ body.dark-mode .map-btn:hover {
                         if (row && row.key != null) cache.set(String(row.key), row.value == null ? '' : String(row.value));
                     });
 
-                    // Migrasi satu kali dari localStorage lama. Jangan menimpa
-                    // data IndexedDB yang sudah ada. Setelah berhasil, hapus
-                    // hanya key milik aplikasi dari localStorage lama.
                     for (const key of APP_STORAGE_KEYS) {
                         const oldValue = nativeGet(key);
                         if (oldValue !== null && !cache.has(key)) {
@@ -3020,8 +3044,7 @@ body.dark-mode .map-btn:hover {
                 } catch (error) {
                     console.error('IndexedDB init gagal:', error);
                     initialized = false;
-                    // Aplikasi tetap dapat berjalan menggunakan cache memory.
-                    // Tidak menulis data baru kembali ke localStorage.
+                    
                     for (const key of APP_STORAGE_KEYS) {
                         const oldValue = nativeGet(key);
                         if (oldValue !== null) cache.set(key, oldValue);
@@ -3044,7 +3067,6 @@ body.dark-mode .map-btn:hover {
             function getItem(key) {
                 const normalized = String(key);
                 if (cache.has(normalized)) return cache.get(normalized);
-                // Hanya fallback sementara saat database belum siap.
                 if (!initialized) return nativeGet(normalized);
                 return null;
             }
@@ -3151,7 +3173,6 @@ body.dark-mode .map-btn:hover {
                 icon = 'fa-triangle-exclamation';
                 title = 'Peringatan';
             }
-            // Bersihkan pesan dari emoji agar lebih rapi
             const cleanMessage = message.replace(/[✅❌⚠️🔑]/g, '').trim();
             createToast(type, title, cleanMessage || message, icon, duration);
         }
@@ -3426,7 +3447,6 @@ body.dark-mode .map-btn:hover {
             `;
         }
 
-        // Event listener input untuk autocomplete dan pencarian
         buffInput.addEventListener('input', function() {
             const val = this.value.trim();
             if (val.length) {
@@ -3552,16 +3572,16 @@ body.dark-mode .map-btn:hover {
         }
 
         function getNextOrderPenipu() {
-            let maxOrder = 0;
-            for (const key in dataPenipu) {
-                const order = dataPenipu[key]?._o;
-                if (order !== undefined && order !== null && order !== '') {
-                    const num = parseInt(order);
-                    if (!isNaN(num) && num > maxOrder) maxOrder = num;
-                }
-            }
-            return maxOrder + 1;
+    let maxId = 0;
+    for (const key in dataPenipu) {
+        const id = dataPenipu[key]?.id;
+        if (id !== undefined && id !== null && id !== '') {
+            const num = parseInt(id);
+            if (!isNaN(num) && num > maxId) maxId = num;
         }
+    }
+    return maxId + 1;
+}
 
         function getAlasanDariForm(selectId, textId) {
             const select = document.getElementById(selectId);
@@ -3664,7 +3684,6 @@ body.dark-mode .map-btn:hover {
                 existing.alasan = gabungAlasan(existing.alasan, alasan);
                 showToast('✅ Berhasil digabung', 2000);
             } else {
-                // record_id = id (auto increment)
                 const idBaru = getNextIdPenipu();
                 let orderBaru;
                 if (relasiManual && !isNaN(parseInt(relasiManual)) && parseInt(relasiManual) > 0) {
@@ -3738,7 +3757,6 @@ body.dark-mode .map-btn:hover {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     editPenipuOldNomor = nomor;
 
-    // ★ Sembunyikan form tambah NMID ★
     const nmidForm = document.getElementById('nmidFormContainer');
     if (nmidForm) nmidForm.style.display = 'none';
 
@@ -3831,52 +3849,67 @@ body.dark-mode .map-btn:hover {
         }
 
         function renderEditPenipu() {
-            const container = document.getElementById('editPenipuContainer');
-            const empty = document.getElementById('editPenipuEmpty');
-            const search = document.getElementById('editPenipuSearch').value.trim().toLowerCase();
-            const clearBtn = document.getElementById('editPenipuClearBtn');
-            if (search.length > 0) clearBtn.classList.add('visible'); else clearBtn.classList.remove('visible');
+    const container = document.getElementById('editPenipuContainer');
+    const empty = document.getElementById('editPenipuEmpty');
+    const searchRaw = document.getElementById('editPenipuSearch').value.trim();
+    const clearBtn = document.getElementById('editPenipuClearBtn');
+    if (searchRaw.length > 0) clearBtn.classList.add('visible'); else clearBtn.classList.remove('visible');
 
-            const keys = Object.keys(dataPenipu);
-            if (keys.length === 0) {
-                empty.style.display = 'block';
-                container.innerHTML = '';
-                return;
+    const keys = Object.keys(dataPenipu);
+    if (keys.length === 0) {
+        empty.style.display = 'block';
+        container.innerHTML = '';
+        return;
+    }
+    empty.style.display = 'none';
+
+    let search = searchRaw.toLowerCase();
+    let searchNumber = search.replace(/\D/g, '');
+    let search62 = null;
+    if (searchNumber.startsWith('0')) {
+        search62 = '62' + searchNumber.substring(1);
+    }
+
+    let filtered = keys;
+    if (search) {
+        filtered = keys.filter(nomor => {
+            const entry = dataPenipu[nomor];
+            const nomorLower = nomor.toLowerCase();
+            let match = nomorLower.includes(search);
+            if (!match && search62 && nomorLower.includes(search62)) {
+                match = true;
             }
-            empty.style.display = 'none';
-
-            let filtered = keys;
-            if (search) {
-                filtered = keys.filter(nomor => {
-                    const entry = dataPenipu[nomor];
-                    return nomor.includes(search) || (entry.nama && entry.nama.toLowerCase().includes(search));
-                });
+            if (!match && entry.nama && entry.nama.toLowerCase().includes(search)) {
+                match = true;
             }
+            return match;
+        });
+    }
 
-            if (filtered.length === 0) {
-                container.innerHTML = `<div class="edit-empty" style="display:block;"><div class="icon">🔍</div><p>Tidak ditemukan</p></div>`;
-                return;
-            }
+    if (filtered.length === 0) {
+        container.innerHTML = `<div class="edit-empty" style="display:block;"><div class="icon">🔍</div><p>Tidak ditemukan</p></div>`;
+        return;
+    }
 
-            let html = '';
-            filtered.forEach(nomor => {
-                const entry = dataPenipu[nomor];
-                html += `
-                    <div class="penipu-item-list">
-                        <div class="info">
-                            <div class="no">${nomor}</div>
-                            <div class="detail"><strong>${escapeHtml(entry.nama || '')}</strong> ➭ ${escapeHtml(entry.alasan || '')}</div>
-                            ${entry._o ? `<div class="detail" style="font-size:11px;color:#94a3b8;">🔗 Relasi: ${entry._o}</div>` : ''}
-                        </div>
-                        <div class="actions">
-                           <button class="btn-edit-penipu" onclick="editPenipuInline('${nomor}')">✏️</button>
-                            <button class="btn-delete-penipu" onclick="hapusPenipuLengkap('${nomor}')">🗑️</button>
-                        </div>
-                    </div>
-                `;
-            });
-            container.innerHTML = html;
-        }
+    let html = '';
+    filtered.forEach(nomor => {
+        const entry = dataPenipu[nomor];
+        html += `
+            <div class="penipu-item-list">
+                <div class="info">
+                    <div class="no">${nomor}</div>
+                    <div class="detail"><strong>${escapeHtml(entry.nama || '')}</strong> ➭ ${escapeHtml(entry.alasan || '')}</div>
+                    ${entry._o ? `<div class="detail" style="font-size:11px;color:#94a3b8;">🔗 Relasi: ${entry._o}</div>` : ''}
+                </div>
+                <div class="actions">
+                    <button class="btn-edit-penipu" onclick="editPenipuInline('${nomor}')">✏️</button>
+                    <button class="btn-delete-penipu" onclick="hapusPenipuLengkap('${nomor}')">🗑️</button>
+                </div>
+            </div>
+        `;
+    });
+    container.innerHTML = html;
+}
 
         const pInput = document.getElementById('inputPenipu');
         const pClearBtn = document.getElementById('pClearBtn');
@@ -4851,9 +4884,8 @@ function initXtall() {
                             for (var p = 0; p < xDb.items.length; p++) {
                                 if (xDb.items[p].id === id) { name = xDb.items[p].name; break; }
                             }
-                      //      if (confirm('Hapus xtall "' + (name || id) + '"?')) {
                                 deleteXtall(id);
-                      //      }
+                      
                         });
                     })(deleteBtns[k]);
                 }
@@ -5344,9 +5376,9 @@ function initXtall() {
             if (e.target === this) closeJsonModal();
         });
 
-        document.getElementById('editPenipuModal').addEventListener('click', function(e) {
-            if (e.target === this) closeEditPenipu();
-        });
+        document.getElementById('editPenipuForm')?.addEventListener('click', function(e) {
+    
+});
 
         function renderEditBuff() {
             const container = document.getElementById('buffEditList');
@@ -5583,7 +5615,7 @@ function initXtall() {
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("sw.js").catch(function() {});
         }
-const CACHE_TTL = 30000; // 30 detik
+const CACHE_TTL = 30000;
 const cache = {};
 const cooldowns = {};
 
@@ -5713,13 +5745,11 @@ window.refreshXtall = withCooldown('xtallRefreshBtn', async function(silent = fa
             } else {
                 xLastUpdate.textContent = '🕒 ' + new Date().toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' });
             }
-            // Tampilkan toast hanya jika tidak silent
             if (!silent && typeof showToast === 'function') {
                 showToast('✅ Data Xtall diperbarui', 2000);
             }
             return true;
         } else {
-            // Jika fetch berhasil tapi data kosong, coba lokal
             const localData = xLoadDb();
             if (localData && localData.items && localData.items.length > 0) {
                 xDb = localData;
@@ -6029,16 +6059,40 @@ function getBankName(domain) {
 }
 async function fetchLocationByPostal(postalCode) {
     try {
-        const response = await fetch(`https://kodepos.vercel.app/search/?q=${postalCode}`);
-        if (!response.ok) throw new Error('Gagal menghubungi API');
-        const data = await response.json();
-        return data.data?.[0] || null;
+        const code = String(postalCode).trim();
+        console.log(`🔍 Mencari kode pos: "${code}"`);
+
+        const { data, error } = await supabaseClient
+            .from('db_kodepos')
+            .select('kodepos, kelurahan, kecamatan, kabupaten, provinsi, latitude, longitude')
+            .eq('kodepos', code)
+            .maybeSingle();
+
+        if (error) {
+            console.error('❌ Supabase error:', error);
+            return null;
+        }
+
+        if (data) {
+            console.log('✅ Data ditemukan:', data);
+            return {
+                postalcode: data.kodepos,
+                village: data.kelurahan,
+                district: data.kecamatan,
+                regency: data.kabupaten,
+                province: data.provinsi,
+                latitude: data.latitude,
+                longitude: data.longitude
+            };
+        } else {
+            console.warn(`❌ Kode pos "${code}" tidak ditemukan.`);
+            return null;
+        }
     } catch (error) {
-        console.error('Error fetching location:', error);
+        console.error('❌ Error fetchLocationByPostal:', error);
         return null;
     }
 }
-
 async function onQrScanSuccess(decodedText) {
     if (qrScanner) {
         try {
@@ -6094,26 +6148,31 @@ if (postal) {
     if (alamatDiv) {
         try {
             const loc = await fetchLocationByPostal(postal);
+            let alamat = '';
+            let mapUrl = '';
+            let latLngText = '';
+
             if (loc) {
-                const alamat = `${loc.village || '-'}, ${loc.district || '-'}, ${loc.regency || '-'}, ${loc.province || '-'}`;
-                const koordinat = `${loc.latitude || '?'}, ${loc.longitude || '?'}`;
+                alamat = `${loc.village || '-'}, ${loc.district || '-'}, ${loc.regency || '-'}, ${loc.province || '-'}`;
                 
-                let html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
-                    <div style="width:100%;">${alamat}<br><span class="coord" style="font-weight:700;">🗺️ ${koordinat}</span></div>`;                
-                let mapUrl = null;
                 if (loc.latitude && loc.longitude) {
+                    latLngText = `📍 ${loc.latitude}, ${loc.longitude}`;
                     mapUrl = `https://www.google.com/maps?q=${loc.latitude},${loc.longitude}`;
-                } else if (alamat) {
+                } else {
                     mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(alamat)}`;
                 }
-                if (mapUrl) {
-                    html += `<a href="${mapUrl}" target="_blank" class="map-btn">🌏 G-Maps</a>`;
-                }
-                html += `</div>`;
-                alamatDiv.innerHTML = html;
             } else {
-                alamatDiv.innerHTML = `<span class="error">⚠️ Alamat tidak ditemukan untuk pos ${postal}</span>`;
+                alamat = `Kode pos ${postal}, Indonesia`;
+                mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(postal + ' Indonesia')}`;
             }
+
+            let html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
+                <div style="width:100%;">${alamat}</div>
+                ${latLngText ? `<div style="width:100%; font-size:12px; color:#94a3b8;">${latLngText}</div>` : ''}
+                <a href="${mapUrl}" target="_blank" class="map-btn">🌏 G-Maps</a>
+            </div>`;
+            alamatDiv.innerHTML = html;
+
         } catch (e) {
             alamatDiv.innerHTML = `<span class="error">❌ Gagal ambil alamat</span>`;
         }
@@ -6153,7 +6212,6 @@ if (postal) {
                 }
 
                 const relasi = qrData._oq;
-                //resultDiv.innerHTML += `<div style="margin-top:4px;font-size:13px;"><strong>Relasi:</strong> ${relasi || 'Tidak ada'}</div>`;
 
                 if (relasi) {
                     const { data: scammers, error: scamError } = await supabaseClient
@@ -6372,17 +6430,17 @@ async function lihatDaftarNmid() {
             return;
         }
 
-        let html = `<div style="margin-top:8px; max-height:300px; overflow-y:auto; border:1px solid #e2e8f0; border-radius:8px; padding:8px;">`;
+        let html = `<div style="margin-top:8px; max-height:300px; overflow-y:auto; border:2px solid #e2e8f0; border-radius:8px; padding:5px;">`;
         html += `<div style="display:grid; grid-template-columns:2fr 1fr 1.2fr; gap:6px; font-weight:700; color:#64748b; border-bottom:1px solid #e2e8f0; padding-bottom:6px; font-size:13px;">
-                    <span>NMID</span><span>Relasi (_oq)</span><span>Aksi</span>
+                    <span>NMID</span><span>Relasi</span><span>Aksi</span>
                  </div>`;
 
         data.forEach(row => {
             const rowId = `nmid-row-${row.qrid.replace(/[^a-zA-Z0-9]/g, '_')}`;
             html += `
                 <div id="${rowId}" style="display:grid; grid-template-columns:2fr 1fr 1.2fr; gap:6px; padding:6px 0; border-bottom:1px solid #f1f5f9; font-size:13px; align-items:center;">
-                    <span style="font-weight:600; color:#1e293b; word-break:break-word;">${row.qrid}</span>
-                    <span>${row._oq !== null ? row._oq : '-'}</span>
+                    <span class="related-no" style="font-size:12px;font-weight:600; word-break:break-word;">${row.qrid}</span>
+                    <span style="font-size:12px;">${row._oq !== null ? row._oq : '-'}</span>
                     <span style="display:flex; gap:4px;">
                         <button onclick="editNmid('${row.qrid}', ${row._oq !== null ? row._oq : 'null'})" style="background:#3b82f6; color:#fff; border:none; border-radius:4px; padding:2px 8px; cursor:pointer; font-size:11px;">✏️</button>
                         <button onclick="hapusNmid('${row.qrid}')" style="background:#ef4444; color:#fff; border:none; border-radius:4px; padding:2px 8px; cursor:pointer; font-size:11px;">🗑️</button>
@@ -6448,7 +6506,7 @@ async function saveEditNmid(oldNmid) {
         if (updateError) throw updateError;
 
         showToast(`✅ NMID berhasil diperbarui`, 2000);
-        lihatDaftarNmid(); // refresh daftar
+        lihatDaftarNmid(); 
     } catch (error) {
         console.error('Error saveEditNmid:', error);
         showToast('❌ Gagal menyimpan perubahan: ' + error.message, 3000);
@@ -6484,14 +6542,17 @@ function editPenipuInline(nomor) {
         return;
     }
     editPenipuOldNomorInline = nomor;
+
     document.getElementById('editPenipuContainer').style.display = 'none';
     document.getElementById('editPenipuEmpty').style.display = 'none';
     const nmidForm = document.getElementById('nmidFormContainer');
     if (nmidForm) nmidForm.style.display = 'none';
+
     document.getElementById('editNomorPenipuInline').value = nomor;
     document.getElementById('editIdPenipuInline').value = dataPenipu[nomor]._o || '';
     document.getElementById('editNamaPenipuInline').value = dataPenipu[nomor].nama || '';
     setAlasanKeForm('editAlasanPenipuSelectInline', 'editAlasanPenipuTextInline', dataPenipu[nomor].alasan || '');
+
     document.getElementById('editPenipuForm').style.display = 'block';
 }
 
@@ -6509,6 +6570,7 @@ async function saveEditPenipuInline() {
     const nomorBaruRaw = document.getElementById('editNomorPenipuInline').value.trim();
     const nama = document.getElementById('editNamaPenipuInline').value.trim();
     const alasan = getAlasanDariForm('editAlasanPenipuSelectInline', 'editAlasanPenipuTextInline');
+    const relasiBaruRaw = document.getElementById('editIdPenipuInline').value.trim();
 
     if (!nomorBaruRaw || !nama || !alasan) {
         showToast('Semua field harus diisi!', 2000);
@@ -6527,7 +6589,12 @@ async function saveEditPenipuInline() {
 
     const dataLama = dataPenipu[oldNomor];
     const idLama = dataLama.id;
-    const orderLama = dataLama._o;
+    let orderBaru;
+    if (relasiBaruRaw && !isNaN(parseInt(relasiBaruRaw))) {
+        orderBaru = parseInt(relasiBaruRaw);
+    } else {
+        orderBaru = idLama;
+    }
 
     if (nomorBaru !== oldNomor) {
         if (dataPenipu[nomorBaru]) {
@@ -6537,13 +6604,14 @@ async function saveEditPenipuInline() {
         delete dataPenipu[oldNomor];
         dataPenipu[nomorBaru] = {
             id: idLama,
-            _o: orderLama,
+            _o: orderBaru,
             nama: kapitalisasiNama(nama),
             alasan: alasan
         };
     } else {
         dataPenipu[nomorBaru].nama = kapitalisasiNama(nama);
         dataPenipu[nomorBaru].alasan = alasan;
+        dataPenipu[nomorBaru]._o = orderBaru;
     }
 
     appStorage.setItem('dataPenipu', JSON.stringify(dataPenipu));
@@ -6557,6 +6625,238 @@ async function saveEditPenipuInline() {
     cancelEditPenipuInline();
     showToast('✅ Berhasil diupdate', 2000);
 }
+let editingKodeposId = null;
+function editKodepos(id) {
+    editingKodeposId = id;
+    const row = document.querySelector(`#kodeposList .item[data-id="${id}"]`);
+    if (!row) {
+        showToast('❌ Data tidak ditemukan', 2000);
+        return;
+    }
+    document.getElementById('inputKodepos').value = row.dataset.kodepos || '';
+    document.getElementById('inputKelurahan').value = row.dataset.kelurahan || '';
+    document.getElementById('inputKecamatan').value = row.dataset.kecamatan || '';
+    document.getElementById('inputKabupaten').value = row.dataset.kabupaten || '';
+    document.getElementById('inputProvinsi').value = row.dataset.provinsi || '';
+    document.getElementById('inputLatitude').value = row.dataset.latitude || '';
+    document.getElementById('inputLongitude').value = row.dataset.longitude || '';
+    document.getElementById('editKodeposId').value = id;
+    document.getElementById('btnTambahKodepos').textContent = '💾 Simpan';
+    document.getElementById('btnTambahKodepos').onclick = saveEditKodepos;
+    document.getElementById('btnTambahKodepos').style.background = 'linear-gradient(135deg,#3b82f6,#2563eb)';
+    document.getElementById('btnBatalKodepos').style.display = 'inline-block';
+    
+    scrollToForm();
+}
+function batalEditKodepos() {
+    editingKodeposId = null;
+    resetFormKodepos();
+    cariKodepos();
+}
+
+function resetFormKodepos() {
+    document.getElementById('inputKodepos').value = '';
+    document.getElementById('inputKelurahan').value = '';
+    document.getElementById('inputKecamatan').value = '';
+    document.getElementById('inputKabupaten').value = '';
+    document.getElementById('inputProvinsi').value = '';
+    document.getElementById('inputLatitude').value = '';
+    document.getElementById('inputLongitude').value = '';
+    document.getElementById('editKodeposId').value = '';
+    document.getElementById('btnTambahKodepos').textContent = '➕ Tambah';
+    document.getElementById('btnTambahKodepos').onclick = tambahKodepos;
+    document.getElementById('btnTambahKodepos').style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+    document.getElementById('btnBatalKodepos').style.display = 'none';
+}
+function scrollToForm() {
+    const form = document.getElementById('kodeposForm');
+    if (form) form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+async function cariKodepos() {
+    const query = document.getElementById('searchKodepos').value.trim();
+    const listDiv = document.getElementById('kodeposList');
+    if (!query) {
+        listDiv.innerHTML = '<div style="text-align:center;color:#94a3b8;padding:20px;">Ketik kode pos atau nama kelurahan untuk mencari.</div>';
+        return;
+    }
+
+    listDiv.innerHTML = '<div class="loading">⏳ Mencari...</div>';
+
+    try {
+        const { data, error } = await supabaseClient
+            .from('db_kodepos')
+            .select('id, kodepos, kelurahan, kecamatan, kabupaten, provinsi, latitude, longitude')
+            .filter('kodepos::text', 'ilike', `%${query}%`)
+            .limit(20);
+
+        if (error) throw error;
+
+        if (!data || data.length === 0) {
+            const { data: kelData, error: kelError } = await supabaseClient
+                .from('db_kodepos')
+                .select('id, kodepos, kelurahan, kecamatan, kabupaten, provinsi, latitude, longitude')
+                .filter('kelurahan', 'ilike', `%${query}%`)
+                .limit(20);
+
+            if (kelError) throw kelError;
+            renderKodeposList(kelData || []);
+            return;
+        }
+
+        renderKodeposList(data);
+    } catch (error) {
+        console.error('Error cariKodepos:', error);
+        listDiv.innerHTML = `<div class="error">❌ Gagal mencari: ${error.message}</div>`;
+    }
+}
+
+function renderKodeposList(data) {
+    const listDiv = document.getElementById('kodeposList');
+    if (!data || data.length === 0) {
+        listDiv.innerHTML = '<div style="text-align:center;color:#94a3b8;padding:20px;">Tidak ditemukan.</div>';
+        return;
+    }
+
+    let html = '';
+    data.forEach(row => {
+        html += `
+            <div class="item" data-id="${row.id}" 
+                 data-kodepos="${row.kodepos}" 
+                 data-kelurahan="${row.kelurahan}" 
+                 data-kecamatan="${row.kecamatan}" 
+                 data-kabupaten="${row.kabupaten}" 
+                 data-provinsi="${row.provinsi}"
+                 data-latitude="${row.latitude || ''}"
+                 data-longitude="${row.longitude || ''}">
+                <div>
+                    <strong>${row.kodepos}</strong> - ${row.kelurahan}, ${row.kecamatan}, ${row.kabupaten}, ${row.provinsi}
+                    ${row.latitude ? `📍 ${row.latitude}, ${row.longitude}` : ''}
+                </div>
+                <div class="actions">
+                    <button class="btn-edit-kodepos" onclick="editKodepos('${row.id}')">✏️</button>
+                    <button class="btn-delete-kodepos" onclick="hapusKodepos('${row.id}')">🗑️</button>
+                </div>
+            </div>
+        `;
+    });
+    listDiv.innerHTML = html;
+}
+async function tambahKodepos() {
+    if (!requireAdmin('menambah data kodepos')) return;
+
+    const kode = document.getElementById('inputKodepos').value.trim();
+    const kel = document.getElementById('inputKelurahan').value.trim();
+    const kec = document.getElementById('inputKecamatan').value.trim();
+    const kab = document.getElementById('inputKabupaten').value.trim();
+    const prov = document.getElementById('inputProvinsi').value.trim();
+    const lat = document.getElementById('inputLatitude').value.trim();
+    const lng = document.getElementById('inputLongitude').value.trim();
+
+    if (!kode || !kel || !kec || !kab || !prov) {
+        showToast('❌ Kode Pos, Kelurahan, Kecamatan, Kabupaten, dan Provinsi wajib diisi!', 2500);
+        return;
+    }
+
+    try {
+        const { error } = await supabaseClient
+            .from('db_kodepos')
+            .insert([{
+                kodepos: kode,
+                kelurahan: kel,
+                kecamatan: kec,
+                kabupaten: kab,
+                provinsi: prov,
+                latitude: lat || null,
+                longitude: lng || null
+            }]);
+
+        if (error) throw error;
+
+        showToast('✅ Data kodepos berhasil ditambahkan', 2000);
+        resetFormKodepos();
+        cariKodepos();
+    } catch (error) {
+        console.error('Error tambahKodepos:', error);
+        showToast('❌ Gagal tambah: ' + error.message, 3000);
+    }
+}
+
+async function saveEditKodepos() {
+    if (!requireAdmin('mengubah data kodepos')) return;
+
+    const id = document.getElementById('editKodeposId').value;
+    if (!id) {
+        showToast('❌ Tidak ada data yang diedit', 2000);
+        return;
+    }
+
+    const kode = document.getElementById('inputKodepos').value.trim();
+    const kel = document.getElementById('inputKelurahan').value.trim();
+    const kec = document.getElementById('inputKecamatan').value.trim();
+    const kab = document.getElementById('inputKabupaten').value.trim();
+    const prov = document.getElementById('inputProvinsi').value.trim();
+    const lat = document.getElementById('inputLatitude').value.trim();
+    const lng = document.getElementById('inputLongitude').value.trim();
+
+    if (!kode || !kel || !kec || !kab || !prov) {
+        showToast('❌ Semua field wajib diisi!', 2500);
+        return;
+    }
+
+    try {
+        const { error } = await supabaseClient
+            .from('db_kodepos')
+            .update({
+                kodepos: kode,
+                kelurahan: kel,
+                kecamatan: kec,
+                kabupaten: kab,
+                provinsi: prov,
+                latitude: lat || null,
+                longitude: lng || null
+            })
+            .eq('id', id);
+
+        if (error) throw error;
+
+        showToast('✅ Data kodepos berhasil diupdate', 2000);
+        resetFormKodepos();
+        cariKodepos();
+    } catch (error) {
+        console.error('Error saveEditKodepos:', error);
+        showToast('❌ Gagal update: ' + error.message, 3000);
+    }
+}
+
+async function hapusKodepos(id) {
+    if (!requireAdmin('menghapus data kodepos')) return;
+
+    showDeleteConfirm(
+        'Hapus Data Kodepos',
+        'Yakin ingin menghapus data ini?',
+        async function() {
+            try {
+                const { error } = await supabaseClient
+                    .from('db_kodepos')
+                    .delete()
+                    .eq('id', id);
+
+                if (error) throw error;
+
+                showToast('✅ Data kodepos dihapus', 2000);
+                cariKodepos();
+            } catch (error) {
+                console.error('Error hapusKodepos:', error);
+                showToast('❌ Gagal hapus: ' + error.message, 3000);
+            }
+        },
+        function() {
+            showToast('Dibatalkan', 1500);
+        }
+    );
+}
+
     </script>
 
 <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
@@ -6703,7 +7003,6 @@ window.loadData = async function(force = false){
     if (hasLocal) {
         dataBuff = localBuff || {};
         dataPenipu = localPenipu || {};
-        // Update UI langsung
         let totalBuff = 0;
         Object.values(dataBuff).forEach(arr => totalBuff += Array.isArray(arr) ? arr.length : 0);
         document.getElementById('totalBuff').innerText = '📘 ' + totalBuff;
@@ -6723,13 +7022,11 @@ window.loadData = async function(force = false){
                 loadBuffFromSupabase(),
                 loadScammersFromSupabase()
             ]);
-            // Update data & simpan ke IndexedDB
             dataBuff = buffs;
             dataPenipu = scammers;
             appStorage.setItem('dataBuff', JSON.stringify(dataBuff));
             appStorage.setItem('dataPenipu', JSON.stringify(dataPenipu));
             appStorage.setItem('lastUpdate', new Date().toLocaleString('id-ID'));
-            // Update UI
             let totalBuff = 0;
             Object.values(dataBuff).forEach(arr => totalBuff += Array.isArray(arr) ? arr.length : 0);
             document.getElementById('totalBuff').innerText = '📘 ' + totalBuff;
@@ -6748,7 +7045,6 @@ window.loadData = async function(force = false){
             return true;
         } catch (error) {
             console.warn('Fetch online gagal:', error);
-            // Jika fetch gagal tapi ada lokal, tampilkan info pakai lokal
             if (typeof showToast === 'function' && hasLocal) {
                 showToast('Gagal update, pakai data lokal', 2500);
             } else if (typeof showToast === 'function' && !hasLocal) {
@@ -6758,7 +7054,6 @@ window.loadData = async function(force = false){
             return false;
         }
     } else {
-        // Offline: tampilkan toast lokal
         if (typeof showToast === 'function' && hasLocal) {
             showToast('Menggunakan data lokal (offline)', 2000);
         } else if (typeof showToast === 'function' && !hasLocal) {
@@ -6957,7 +7252,6 @@ window.uploadXtallJSON = async function(){
         } catch (uploadError) {
             console.error('uploadXtallJSON gagal, mencoba rollback kedua tabel:', uploadError);
             try {
-                // Restore parent table first, then child stats, to respect FK.
                 const { error: clearStatsError } = await supabaseClient.from('crysta_stats').delete().neq('crysta_id', -1);
                 if (clearStatsError) throw clearStatsError;
                 const { error: clearCrystaError } = await supabaseClient.from('crysta').delete().neq('id', -1);
