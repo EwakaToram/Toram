@@ -2260,6 +2260,36 @@ body.dark-mode .map-btn:hover {
 .btn-cancel-kodepos:hover { background:#4b5563; }
 body.dark-mode #kodeposList { border-color:var(--border-light, #475569); }
 body.dark-mode #kodeposList .item { border-bottom-color:rgba(255,255,255,0.06); }
+body.dark-mode .qr-result-card .alamat {
+    background: var(--bg-input, #2d3748) !important;
+    border-left-color: #3b82f6 !important;
+    color: var(--text-primary, #e2e8f0) !important;
+}
+body.dark-mode .qr-result-card .alamat .coord {
+    color: var(--text-muted, #94a3b8) !important;
+}
+body.dark-mode .qr-result-card .alamat .error {
+    color: #f87171 !important;
+}
+body.dark-mode .qr-result-card .alamat .warning {
+    background: #3d2a1a !important;
+    color: #fbbf24 !important;
+    border-left-color: #f59e0b !important;
+}
+body.dark-mode .qr-result-card .alamat .loading {
+    color: #60a5fa !important;
+}
+body.dark-mode .qr-result-card .alamat .multi-village {
+    background: #3d2a1a !important;
+    color: #fbbf24 !important;
+    border-left-color: #f59e0b !important;
+}
+body.dark-mode .qr-result-card .alamat .multi-village strong {
+    color: #fcd34d !important;
+}
+body.dark-mode .qr-result-card .alamat .village-list {
+    color: var(--text-secondary, #94a3b8) !important;
+}
 </style>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#3b82f6">
@@ -6061,29 +6091,19 @@ async function fetchLocationByPostal(postalCode) {
     try {
         const code = String(postalCode).trim();
         console.log(`🔍 Mencari kode pos: "${code}"`);
-
         const { data, error } = await supabaseClient
             .from('db_kodepos')
             .select('kodepos, kelurahan, kecamatan, kabupaten, provinsi, latitude, longitude')
-            .eq('kodepos', code)
-            .maybeSingle();
+            .eq('kodepos', code);
 
         if (error) {
             console.error('❌ Supabase error:', error);
             return null;
         }
 
-        if (data) {
-            console.log('✅ Data ditemukan:', data);
-            return {
-                postalcode: data.kodepos,
-                village: data.kelurahan,
-                district: data.kecamatan,
-                regency: data.kabupaten,
-                province: data.provinsi,
-                latitude: data.latitude,
-                longitude: data.longitude
-            };
+        if (data && data.length > 0) {
+            console.log(`✅ Ditemukan ${data.length} data untuk kode pos "${code}"`);
+            return data;
         } else {
             console.warn(`❌ Kode pos "${code}" tidak ditemukan.`);
             return null;
@@ -6147,33 +6167,55 @@ if (postal) {
     const alamatDiv = document.getElementById('alamatContainer');
     if (alamatDiv) {
         try {
-            const loc = await fetchLocationByPostal(postal);
-            let alamat = '';
+            const data = await fetchLocationByPostal(postal);
+            let html = '';
             let mapUrl = '';
-            let latLngText = '';
 
-            if (loc) {
-                alamat = `${loc.village || '-'}, ${loc.district || '-'}, ${loc.regency || '-'}, ${loc.province || '-'}`;
-                
-                if (loc.latitude && loc.longitude) {
-                    latLngText = `📍 ${loc.latitude}, ${loc.longitude}`;
-                    mapUrl = `https://www.google.com/maps?q=${loc.latitude},${loc.longitude}`;
-                } else {
+            if (data && data.length > 0) {
+                const first = data[0];
+                const kecamatan = first.kecamatan || '-';
+                const kabupaten = first.kabupaten || '-';
+                const provinsi = first.provinsi || '-';
+
+                if (data.length === 1) {
+                    const alamat = `${first.kelurahan}, ${kecamatan}, ${kabupaten}, ${provinsi}`;
+                    const latLngText = (first.latitude && first.longitude) 
+                        ? `📍 ${first.latitude}, ${first.longitude}` 
+                        : '';
                     mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(alamat)}`;
+                    
+                    html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
+                        <div style="width:100%;text-align:center;font-weight:700;font-size:15px;">${alamat}</div>
+                        ${latLngText ? `<div style="width:100%; font-size:12px; color:#94a3b8;">${latLngText}</div>` : ''}
+                        <a href="${mapUrl}" target="_blank" class="map-btn">🌏 G-Maps</a>
+                    </div>`;
+                } else {
+                    const kelurahanList = data.map(item => item.kelurahan).join(', ');
+                    mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(postal + ' Indonesia')}`;
+                    
+                    html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
+                        <div class="multi-village" style="text-align:center;width:100%; font-size:12px; background:#fff3cd; padding:2px 3px; border-radius:5px; margin:-5px 0 6px">
+                            📌 <strong>Kode pos ${postal} mencakup ${data.length} kelurahan di Kecamatan <font color="#3b82f6">${kecamatan}, ${kabupaten}, ${provinsi}</font></strong>
+                        </div>
+                        <div class="village-list" style="text-align:center;width:100%; font-size:15px; color:#475569; font-weight:700;margin-bottom:6px;">
+                            ${kelurahanList}
+                        </div>
+
+                        <a href="${mapUrl}" target="_blank" class="map-btn">🌏 G-Maps</a>
+                       
+                    </div>`;
                 }
             } else {
-                alamat = `Kode pos ${postal}, Indonesia`;
-                mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(postal + ' Indonesia')}`;
+                html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
+                    <div style="width:100%;">Kode pos ${postal}, Indonesia</div>
+                    <a href="https://www.google.com/maps?q=${encodeURIComponent(postal + ' Indonesia')}" target="_blank" class="map-btn">🌏 G-Maps</a>
+                </div>`;
             }
 
-            let html = `<div style="display:flex; flex-direction:column; align-items:flex-end; width:100%;">
-                <div style="width:100%;">${alamat}</div>
-                ${latLngText ? `<div style="width:100%; font-size:12px; color:#94a3b8;">${latLngText}</div>` : ''}
-                <a href="${mapUrl}" target="_blank" class="map-btn">🌏 G-Maps</a>
-            </div>`;
             alamatDiv.innerHTML = html;
 
         } catch (e) {
+            console.error('❌ Error saat ambil alamat:', e);
             alamatDiv.innerHTML = `<span class="error">❌ Gagal ambil alamat</span>`;
         }
     }
